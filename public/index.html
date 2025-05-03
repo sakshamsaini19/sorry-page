@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I'm Sorry</title>
+  <style>
+    body {
+      background-color: #fce4ec;
+      color: #4a148c;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3em;
+    }
+    p {
+      font-size: 1.5em;
+      max-width: 600px;
+      margin: 20px;
+    }
+    .heart {
+      font-size: 5em;
+      color: #e91e63;
+      animation: pulse 1s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    .button {
+      background-color: #ce93d8;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-top: 20px;
+      text-decoration: none;
+    }
+    .button:hover {
+      background-color: #ab47bc;
+    }
+    textarea {
+      width: 80%;
+      max-width: 500px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="heart">💖</div>
+  <h1>I'm So Sorry</h1>
+  <p>
+    Hey Mishti <br><br> 
+    I never meant to upset you. You're really important to me, and I hope this page shows how much I care.
+    Please forgive me if I hurt you. You mean a lot more than you know.please lets end all this and talk like we used to talk. please just give me one more chance and i am truly sorry once again .
+  </p>
+
+  <form action="/message" method="POST">
+    <textarea name="herMessage" rows="4" placeholder="You can write something back if you'd like..."></textarea><br>
+    <button type="submit" class="button">Send Reply 💬</button>
+  </form>
+</body>
+</html>
